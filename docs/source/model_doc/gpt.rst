@@ -4,54 +4,33 @@ OpenAI GPT
 ``OpenAIGPTConfig``
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.OpenAIGPTConfig
+.. autoclass:: pytorch_transformers.OpenAIGPTConfig
     :members:
 
 
 ``OpenAIGPTTokenizer``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.OpenAIGPTTokenizer
+.. autoclass:: pytorch_transformers.OpenAIGPTTokenizer
     :members:
 
 
 ``OpenAIGPTModel``
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.OpenAIGPTModel
+.. autoclass:: pytorch_transformers.OpenAIGPTModel
     :members:
 
 
 ``OpenAIGPTLMHeadModel``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.OpenAIGPTLMHeadModel
+.. autoclass:: pytorch_transformers.OpenAIGPTLMHeadModel
     :members:
 
 
 ``OpenAIGPTDoubleHeadsModel``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.OpenAIGPTDoubleHeadsModel
-    :members:
-
-
-``TFOpenAIGPTModel``
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFOpenAIGPTModel
-    :members:
-
-
-``TFOpenAIGPTLMHeadModel``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFOpenAIGPTLMHeadModel
-    :members:
-
-
-``TFOpenAIGPTDoubleHeadsModel``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFOpenAIGPTDoubleHeadsModel
+.. autoclass:: pytorch_transformers.OpenAIGPTDoubleHeadsModel
     :members:
