@@ -54,7 +54,7 @@ Choose the right framework for every part of a model's lifetime
 | [Model architectures](#model-architectures) | Architectures (with pretrained weights) |
 | [Online demo](#online-demo) | Experimenting with this repo’s text generation capabilities |
 | [Quick tour: Usage](#quick-tour) | Tokenizers & models usage: Bert and GPT-2 |
-| [Quick tour: TF 2.0 and PyTorch ](#Quick-tour-TF-20-training-and-PyTorch-interoperability) | Train a TF 2.0 model in 10 lines of code, load it in PyTorch |
+| [Quick tour: TF 2.0 and PyTorch ](#Quick-tour-TF-2.0-training-and-PyTorch-interoperability) | Train a TF 2.0 model in 10 lines of code, load it in PyTorch |
 | [Quick tour: Fine-tuning/usage scripts](#quick-tour-of-the-fine-tuningusage-scripts) | Using provided scripts: GLUE, SQuAD and Text generation |
 | [Migrating from pytorch-transformers to transformers](#Migrating-from-pytorch-transformers-to-transformers) | Migrating your code from pytorch-pretrained-bert to transformers |
 | [Migrating from pytorch-pretrained-bert to pytorch-transformers](#Migrating-from-pytorch-pretrained-bert-to-transformers) | Migrating your code from pytorch-pretrained-bert to transformers |
@@ -451,10 +451,6 @@ model = BertForSequenceClassification.from_pretrained('bert-base-uncased', outpu
 outputs = model(input_ids, labels=labels)
 loss, logits, attentions = outputs
 ```
-
-### Using hidden states
-
-By enabling the configuration option `output_hidden_states`, it was possible to retrieve the last hidden states of the encoder. In `pytorch-transformers` as well as `transformers` the return value has changed slightly: `all_hidden_states` now also includes the hidden state of the embeddings in addition to those of the encoding layers. This allows users to easily access the embeddings final state.
 
 ### Serialization
 
