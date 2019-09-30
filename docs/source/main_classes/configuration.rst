@@ -6,5 +6,5 @@ The base class ``PretrainedConfig`` implements the common methods for loading/sa
 ``PretrainedConfig``
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.PretrainedConfig
+.. autoclass:: pytorch_transformers.PretrainedConfig
     :members:
