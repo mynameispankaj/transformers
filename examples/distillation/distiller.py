@@ -29,7 +29,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.optim import AdamW
 
-from transformers import WarmupLinearSchedule
+from pytorch_transformers import WarmupLinearSchedule
 
 from utils import logger
 from dataset import Dataset
