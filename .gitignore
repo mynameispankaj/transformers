@@ -129,6 +129,4 @@ proc_data
 runs
 examples/runs
 
-# data
-/data
-serialization_dir
+data

@@ -1,7 +1,7 @@
 Installation
 ================================================
 
-Transformers is tested on Python 2.7 and 3.5+ (examples are tested only on python 3.5+) and PyTorch 1.1.0
+PyTorch-Transformers is tested on Python 2.7 and 3.5+ (examples are tested only on python 3.5+) and PyTorch 1.1.0
 
 With pip
 ^^^^^^^^
@@ -10,7 +10,7 @@ PyTorch Transformers can be installed using pip as follows:
 
 .. code-block:: bash
 
-   pip install transformers
+   pip install pytorch-transformers
 
 From source
 ^^^^^^^^^^^
@@ -19,15 +19,15 @@ To install from source, clone the repository and install with:
 
 .. code-block:: bash
 
-    git clone https://github.com/huggingface/transformers.git
-    cd transformers
+    git clone https://github.com/huggingface/pytorch-transformers.git
+    cd pytorch-transformers
     pip install [--editable] .
 
 
 Tests
 ^^^^^
 
-An extensive test suite is included to test the library behavior and several examples. Library tests can be found in the `tests folder <https://github.com/huggingface/transformers/tree/master/transformers/tests>`_ and examples tests in the `examples folder <https://github.com/huggingface/transformers/tree/master/examples>`_.
+An extensive test suite is included to test the library behavior and several examples. Library tests can be found in the `tests folder <https://github.com/huggingface/pytorch-transformers/tree/master/pytorch_transformers/tests>`_ and examples tests in the `examples folder <https://github.com/huggingface/pytorch-transformers/tree/master/examples>`_.
 
 Tests can be run using `pytest` (install pytest if needed with `pip install pytest`).
 
@@ -35,7 +35,7 @@ Run all the tests from the root of the cloned repository with the commands:
 
 .. code-block:: bash
 
-    python -m pytest -sv ./transformers/tests/
+    python -m pytest -sv ./pytorch_transformers/tests/
     python -m pytest -sv ./examples/
 
 
@@ -50,12 +50,6 @@ If you want to reproduce the original tokenization process of the ``OpenAI GPT``
    python -m spacy download en
 
 If you don't install ``ftfy`` and ``SpaCy``\ , the ``OpenAI GPT`` tokenizer will default to tokenize using BERT's ``BasicTokenizer`` followed by Byte-Pair Encoding (which should be fine for most usage, don't worry).
-
-
-Note on model downloads (Continuous Integration or large-scale deployments)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you expect to be downloading large volumes of models (more than 1,000) from our hosted bucket (for instance through your CI setup, or a large-scale production deployment), please cache the model files on your end. It will be way faster, and cheaper. Feel free to contact us privately if you need any help.
 
 
 Do you want to run a Transformer model on a mobile device?
