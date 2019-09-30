@@ -9,7 +9,7 @@ The ``.optimization`` module provides:
 ``AdamW``
 ~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.AdamW
+.. autoclass:: pytorch_transformers.AdamW
     :members:
 
 Schedules
@@ -18,11 +18,11 @@ Schedules
 Learning Rate Schedules
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autoclass:: transformers.ConstantLRSchedule
+.. autoclass:: pytorch_transformers.ConstantLRSchedule
     :members:
 
 
-.. autoclass:: transformers.WarmupConstantSchedule
+.. autoclass:: pytorch_transformers.WarmupConstantSchedule
     :members:
 
 .. image:: /imgs/warmup_constant_schedule.png
@@ -30,7 +30,7 @@ Learning Rate Schedules
     :alt:
 
 
-.. autoclass:: transformers.WarmupCosineSchedule
+.. autoclass:: pytorch_transformers.WarmupCosineSchedule
     :members:
 
 .. image:: /imgs/warmup_cosine_schedule.png
@@ -38,7 +38,7 @@ Learning Rate Schedules
     :alt:
 
 
-.. autoclass:: transformers.WarmupCosineWithHardRestartsSchedule
+.. autoclass:: pytorch_transformers.WarmupCosineWithHardRestartsSchedule
     :members:
 
 .. image:: /imgs/warmup_cosine_hard_restarts_schedule.png
@@ -47,7 +47,7 @@ Learning Rate Schedules
 
 
 
-.. autoclass:: transformers.WarmupLinearSchedule
+.. autoclass:: pytorch_transformers.WarmupLinearSchedule
     :members:
 
 .. image:: /imgs/warmup_linear_schedule.png
