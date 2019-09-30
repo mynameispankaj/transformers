@@ -30,6 +30,7 @@ except ImportError:
 import run_glue
 import run_squad
 import run_generation
+import run_blue
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -106,6 +107,33 @@ class ExamplesTests(unittest.TestCase):
         with patch.object(sys, 'argv', testargs + [model_type, model_name]):
             result = run_generation.main()
             self.assertGreaterEqual(len(result), 10)
+
+    def test_run_blue(self):
+        stream_handler = logging.StreamHandler(sys.stdout)
+        logger.addHandler(stream_handler)
+
+        testargs = ["run_blue.py",
+                    "--data_dir=./examples/tests_samples/HOC/",
+                    "--task_name=mul",
+                    "--data=hoc",
+                    "--do_train",
+                    "--do_eval",
+                    "--output_dir=./examples/tests_samples/temp_dir",
+                    "--per_gpu_train_batch_size=2",
+                    "--per_gpu_eval_batch_size=1",
+                    "--learning_rate=1e-4",
+                    "--max_steps=10",
+                    "--warmup_steps=2",
+                    "--overwrite_output_dir",
+                    "--seed=42",
+                    "--eval_all_checkpoints"]
+        model_type, model_name = ("--model_type=roberta",
+                                  "--model_name_or_path=roberta-base")
+        with patch.object(sys, 'argv', testargs + [model_type, model_name]):
+            result = run_blue.main()
+            for key in result.keys():
+                if key not in ['main_', 'step_']:
+                    self.assertGreaterEqual(result[key], 0.3)
 
 if __name__ == "__main__":
     unittest.main()
