@@ -11,19 +11,19 @@ Instantiating one of ``AutoModel``, ``AutoConfig`` and ``AutoTokenizer`` will di
 ``AutoConfig``
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.AutoConfig
+.. autoclass:: pytorch_transformers.AutoConfig
     :members:
 
 
 ``AutoModel``
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.AutoModel
+.. autoclass:: pytorch_transformers.AutoModel
     :members:
 
 
 ``AutoTokenizer``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.AutoTokenizer
+.. autoclass:: pytorch_transformers.AutoTokenizer
     :members:

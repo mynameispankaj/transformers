@@ -13,7 +13,7 @@ similar API between the different models.
 
 ## Language model fine-tuning
 
-Based on the script [`run_lm_finetuning.py`](https://github.com/huggingface/transformers/blob/master/examples/run_lm_finetuning.py).
+Based on the script [`run_lm_finetuning.py`](https://github.com/huggingface/pytorch-transformers/blob/master/examples/run_lm_finetuning.py).
 
 Fine-tuning the library models for language modeling on a text dataset for GPT, GPT-2, BERT and RoBERTa (DistilBERT 
 to be added soon). GPT and GPT-2 are fine-tuned using a causal language modeling (CLM) loss while BERT and RoBERTa 
@@ -75,7 +75,7 @@ python run_lm_finetuning.py \
 
 ## Language generation
 
-Based on the script [`run_generation.py`](https://github.com/huggingface/transformers/blob/master/examples/run_generation.py).
+Based on the script [`run_generation.py`](https://github.com/huggingface/pytorch-transformers/blob/master/examples/run_generation.py).
 
 Conditional text generation using the auto-regressive models of the library: GPT, GPT-2, Transformer-XL and XLNet.
 A similar script is used for our official demo [Write With Transfomer](https://transformer.huggingface.co), where you
@@ -91,7 +91,7 @@ python run_generation.py \
 
 ## GLUE
 
-Based on the script [`run_glue.py`](https://github.com/huggingface/transformers/blob/master/examples/run_glue.py).
+Based on the script [`run_glue.py`](https://github.com/huggingface/pytorch-transformers/blob/master/examples/run_glue.py).
 
 Fine-tuning the library models for sequence classification on the GLUE benchmark: [General Language Understanding 
 Evaluation](https://gluebenchmark.com/). This script can fine-tune the following models: BERT, XLM, XLNet and RoBERTa. 
@@ -319,7 +319,7 @@ eval_loss = 0.44457291918821606
 
 ## SQuAD
 
-Based on the script [`run_squad.py`](https://github.com/huggingface/transformers/blob/master/examples/run_squad.py).
+Based on the script [`run_squad.py`](https://github.com/huggingface/pytorch-transformers/blob/master/examples/run_squad.py).
 
 #### Fine-tuning on SQuAD
 
@@ -389,4 +389,74 @@ exact_match = 86.91
 
 This fine-tuneds model is available as a checkpoint under the reference
 `bert-large-uncased-whole-word-masking-finetuned-squad`.
+
+### `run_semeval.py`: relationship classification using R-Bert
+
+R-BERT is a relationship classification head for BERT and RoBERTa, described [here](https://arxiv.org/pdf/1905.08284.pdf").
+
+This example code fine-tunes R-BERT on the semeval 2010 Task 8 dataset:
+ 
+```bash
+python ./examples/run_semeval.py \
+--data_dir $SEMEVAL_DIR \
+--output_dir $RESULTS_DIR \
+--model_name_or_path bert-base-uncased \
+--do_train \
+--do_eval \
+--overwrite_output_dir \
+--num_train_epochs 8.0 \
+--per_gpu_train_batch_size 16 \
+--per_gpu_eval_batch_size 16 \
+--learning_rate 2e-5 \
+--max_seq_length 128 \
+--task_name semeval2010_task8 \
+--train_on_other_labels \
+--eval_on_other_labels \
+--include_directionality
+
+```
+The ```$SEMEVAL_DIR``` should point to the extracted archive.
+
+The ```--include_directionality``` flag trains a classifier using all 18 semeval classes. The 
+```--train_on_other_labels``` and ```--eval_on_other_labels``` flags also include instances labeled as 'Other' in the 
+training and evaluation respectively. Include all of these to be able to use the official evaluation script. 
+
+Note, although an F1 score is calculated in the python code, two additional files are also written out at the checkpoint 
+intervals ```{global_step}_semeval_results.tsv``` that may be used with the official Semeval evaluation script 
+(supplied in the semeval data archive). The dataset is available under Creative Commons Atrribution 3.0 
+Unported Licence (http://creativecommons.org/licenses/by/3.0/) and is available 
+[here](http://docs.google.com/leaf?id=0B_jQiLugGTAkMDQ5ZjZiMTUtMzQ1Yy00YWNmLWJlZDYtOWY1ZDMwY2U4YjFk&sort=name&layout=list&num=50). 
+
+for example:
+
+```bash
+./semeval2010_task8_scorer-v1.2.pl $SEMEVAL_DIR/{global_step}_semeval_results.tsv $SEMEVAL_DIR/TEST_FILE_SEMEVAL_SCRIPT_FORMAT.tsv 
+```
+
+
+Using the ```bert-base-uncased``` should give around 87.6 undirected F1 (excluding other), with the official script. 
+However, the RoBERTa model can also be used with this head:
+
+```bash
+python ./examples/run_semeval.py \
+--data_dir $SEMEVAL_DIR \
+--output_dir $RESULTS_DIR \
+--model_name_or_path roberta-large \
+--model_type roberta \
+--do_train \
+--do_eval \
+--overwrite_output_dir \
+--num_train_epochs 8.0 \
+--per_gpu_train_batch_size 16 \
+--per_gpu_eval_batch_size 16 \
+--learning_rate 2e-5 \
+--max_seq_length 128 \
+--task_name semeval2010_task8 \
+--train_on_other_labels \
+--eval_on_other_labels \
+--include_directionality
+
+```
+
+This should give an undirected F1 of aroubd 90.8 (excluding other) with the official script.
 
