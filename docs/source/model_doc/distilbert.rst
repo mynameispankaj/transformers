@@ -4,67 +4,40 @@ DistilBERT
 ``DistilBertConfig``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.DistilBertConfig
+.. autoclass:: pytorch_transformers.DistilBertConfig
     :members:
 
 
 ``DistilBertTokenizer``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.DistilBertTokenizer
+.. autoclass:: pytorch_transformers.DistilBertTokenizer
     :members:
 
 
 ``DistilBertModel``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.DistilBertModel
+.. autoclass:: pytorch_transformers.DistilBertModel
     :members:
 
 
 ``DistilBertForMaskedLM``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.DistilBertForMaskedLM
+.. autoclass:: pytorch_transformers.DistilBertForMaskedLM
     :members:
 
 
 ``DistilBertForSequenceClassification``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.DistilBertForSequenceClassification
+.. autoclass:: pytorch_transformers.DistilBertForSequenceClassification
     :members:
 
 
 ``DistilBertForQuestionAnswering``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.DistilBertForQuestionAnswering
-    :members:
-
-``TFDistilBertModel``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFDistilBertModel
-    :members:
-
-
-``TFDistilBertForMaskedLM``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFDistilBertForMaskedLM
-    :members:
-
-
-``TFDistilBertForSequenceClassification``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFDistilBertForSequenceClassification
-    :members:
-
-
-``TFDistilBertForQuestionAnswering``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFDistilBertForQuestionAnswering
+.. autoclass:: pytorch_transformers.DistilBertForQuestionAnswering
     :members:
