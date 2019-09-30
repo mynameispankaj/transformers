@@ -4,125 +4,69 @@ BERT
 ``BertConfig``
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.BertConfig
+.. autoclass:: pytorch_transformers.BertConfig
     :members:
 
 
 ``BertTokenizer``
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.BertTokenizer
+.. autoclass:: pytorch_transformers.BertTokenizer
     :members:
 
 
 ``BertModel``
 ~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.BertModel
+.. autoclass:: pytorch_transformers.BertModel
     :members:
 
 
 ``BertForPreTraining``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.BertForPreTraining
+.. autoclass:: pytorch_transformers.BertForPreTraining
     :members:
 
 
 ``BertForMaskedLM``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.BertForMaskedLM
+.. autoclass:: pytorch_transformers.BertForMaskedLM
     :members:
 
 
 ``BertForNextSentencePrediction``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.BertForNextSentencePrediction
+.. autoclass:: pytorch_transformers.BertForNextSentencePrediction
     :members:
 
 
 ``BertForSequenceClassification``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.BertForSequenceClassification
+.. autoclass:: pytorch_transformers.BertForSequenceClassification
     :members:
 
 
 ``BertForMultipleChoice``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.BertForMultipleChoice
+.. autoclass:: pytorch_transformers.BertForMultipleChoice
     :members:
 
 
 ``BertForTokenClassification``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.BertForTokenClassification
+.. autoclass:: pytorch_transformers.BertForTokenClassification
     :members:
 
 
 ``BertForQuestionAnswering``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.BertForQuestionAnswering
-    :members:
-
-
-``TFBertModel``
-~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFBertModel
-    :members:
-
-
-``TFBertForPreTraining``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFBertForPreTraining
-    :members:
-
-
-``TFBertForMaskedLM``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFBertForMaskedLM
-    :members:
-
-
-``TFBertForNextSentencePrediction``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFBertForNextSentencePrediction
-    :members:
-
-
-``TFBertForSequenceClassification``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFBertForSequenceClassification
-    :members:
-
-
-``TFBertForMultipleChoice``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFBertForMultipleChoice
-    :members:
-
-
-``TFBertForTokenClassification``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFBertForTokenClassification
-    :members:
-
-
-``TFBertForQuestionAnswering``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFBertForQuestionAnswering
+.. autoclass:: pytorch_transformers.BertForQuestionAnswering
     :members:
 
