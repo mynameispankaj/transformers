@@ -12,5 +12,5 @@ The base class ``PreTrainedTokenizer`` implements the common methods for loading
 ``PreTrainedTokenizer``
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.PreTrainedTokenizer
+.. autoclass:: pytorch_transformers.PreTrainedTokenizer
     :members:
