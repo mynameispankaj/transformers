@@ -19,14 +19,14 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 # -- Project information -----------------------------------------------------
 
-project = u'transformers'
+project = u'pytorch-transformers'
 copyright = u'2019, huggingface'
 author = u'huggingface'
 
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'2.0.0'
+release = u'1.0.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -43,8 +43,7 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.napoleon',
     'recommonmark',
-    'sphinx.ext.viewcode',
-    'sphinx_markdown_tables'
+    'sphinx.ext.viewcode'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -109,7 +108,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'transformersdoc'
+htmlhelp_basename = 'pytorch-transformersdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -136,7 +135,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'transformers.tex', u'transformers Documentation',
+    (master_doc, 'pytorch-transformers.tex', u'pytorch-transformers Documentation',
      u'huggingface', 'manual'),
 ]
 
@@ -146,7 +145,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'transformers', u'transformers Documentation',
+    (master_doc, 'pytorch-transformers', u'pytorch-transformers Documentation',
      [author], 1)
 ]
 
@@ -157,8 +156,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'transformers', u'transformers Documentation',
-     author, 'transformers', 'One line description of project.',
+    (master_doc, 'pytorch-transformers', u'pytorch-transformers Documentation',
+     author, 'pytorch-transformers', 'One line description of project.',
      'Miscellaneous'),
 ]
 
