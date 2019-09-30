@@ -4,66 +4,38 @@ XLM
 ``XLMConfig``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLMConfig
+.. autoclass:: pytorch_transformers.XLMConfig
     :members:
 
 ``XLMTokenizer``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLMTokenizer
+.. autoclass:: pytorch_transformers.XLMTokenizer
     :members:
 
 ``XLMModel``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLMModel
+.. autoclass:: pytorch_transformers.XLMModel
     :members:
 
 
 ``XLMWithLMHeadModel``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLMWithLMHeadModel
+.. autoclass:: pytorch_transformers.XLMWithLMHeadModel
     :members:
 
 
 ``XLMForSequenceClassification``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLMForSequenceClassification
+.. autoclass:: pytorch_transformers.XLMForSequenceClassification
     :members:
 
 
 ``XLMForQuestionAnswering``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLMForQuestionAnswering
-    :members:
-
-
-``TFXLMModel``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFXLMModel
-    :members:
-
-
-``TFXLMWithLMHeadModel``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFXLMWithLMHeadModel
-    :members:
-
-
-``TFXLMForSequenceClassification``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFXLMForSequenceClassification
-    :members:
-
-
-``TFXLMForQuestionAnsweringSimple``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFXLMForQuestionAnsweringSimple
+.. autoclass:: pytorch_transformers.XLMForQuestionAnswering
     :members:
