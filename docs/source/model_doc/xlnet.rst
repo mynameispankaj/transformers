@@ -4,68 +4,40 @@ XLNet
 ``XLNetConfig``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLNetConfig
+.. autoclass:: pytorch_transformers.XLNetConfig
     :members:
 
 
 ``XLNetTokenizer``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLNetTokenizer
+.. autoclass:: pytorch_transformers.XLNetTokenizer
     :members:
 
 
 ``XLNetModel``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLNetModel
+.. autoclass:: pytorch_transformers.XLNetModel
     :members:
 
 
 ``XLNetLMHeadModel``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLNetLMHeadModel
+.. autoclass:: pytorch_transformers.XLNetLMHeadModel
     :members:
 
 
 ``XLNetForSequenceClassification``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLNetForSequenceClassification
+.. autoclass:: pytorch_transformers.XLNetForSequenceClassification
     :members:
 
 
 ``XLNetForQuestionAnswering``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: transformers.XLNetForQuestionAnswering
-    :members:
-
-
-``TFXLNetModel``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFXLNetModel
-    :members:
-
-
-``TFXLNetLMHeadModel``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFXLNetLMHeadModel
-    :members:
-
-
-``TFXLNetForSequenceClassification``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFXLNetForSequenceClassification
-    :members:
-
-
-``TFXLNetForQuestionAnsweringSimple``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: transformers.TFXLNetForQuestionAnsweringSimple
+.. autoclass:: pytorch_transformers.XLNetForQuestionAnswering
     :members:
